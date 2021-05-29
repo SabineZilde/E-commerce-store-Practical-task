@@ -1,5 +1,6 @@
-.carousel-inner>.carousel-item {
-    height: 300px;
+body {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
 }
 body {
     background-color: #807f84;
@@ -13,6 +14,14 @@ h1,h2 {
 height: fit-content;
 width: fit-content;
 }
+.carousel-inner>.carousel-item {
+    height: 300px;
+}
+
+.card-text {
+    color: black;
+}
+
 footer {
     background-color: black;
 }
@@ -27,5 +36,4 @@ nav {
 }
 .active {
     background-color: rgba(0, 0, 0, 0.356);
-
 }
