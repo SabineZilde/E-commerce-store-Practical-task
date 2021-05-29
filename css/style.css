@@ -3,14 +3,16 @@
 }
 body {
     background-color: #807f84;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.cart img {
-
-    height: 100px;
-    width: 100px;
-} 
-
+h1,h2 {
+    color: rgb(211, 208, 197);
+}
+.card {
+height: fit-content;
+width: fit-content;
+}
 footer {
     background-color: black;
 }
@@ -19,6 +21,9 @@ nav {
 }
 .nav-link {
     color: white;
+}
+.container-2 {
+    padding-top: 20px;
 }
 .active {
     background-color: rgba(0, 0, 0, 0.356);
