@@ -1,11 +1,14 @@
 .carousel-inner>.carousel-item {
     height: 300px;
 }
+body {
+    background-color: #807f84;
+}
 
-.cart img {
+/* .cart img {
     height: 100px;
     width: 100px;
-}
+} */
 
 footer {
     background-color: black;
