@@ -3,6 +3,7 @@
 }
 
 .cart img {
+<<<<<<< Updated upstream
     height: 100px;
     width: 100px;
 }
@@ -18,4 +19,8 @@ nav {
 }
 .active {
     background-color: rgba(0, 0, 0, 0.356);
+=======
+    /* height: 100px; */
+    /* width: 100px; */
+>>>>>>> Stashed changes
 }
