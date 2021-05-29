@@ -6,3 +6,16 @@
     height: 100px;
     width: 100px;
 }
+
+footer {
+    background-color: black;
+}
+nav {
+    background-color: black;
+}
+.nav-link {
+    color: white;
+}
+.active {
+    background-color: rgba(0, 0, 0, 0.356);
+}
