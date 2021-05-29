@@ -10,6 +10,10 @@ body {
     height: 300px;
 }
 
+.card-text {
+    color: black;
+}
+
 footer {
     background-color: black;
 }
