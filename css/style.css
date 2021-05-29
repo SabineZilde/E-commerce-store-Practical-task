@@ -37,3 +37,8 @@ nav {
 .active {
     background-color: rgba(0, 0, 0, 0.356);
 }
+
+.total-amount {
+    text-align: right;
+    font-size: large;
+}
