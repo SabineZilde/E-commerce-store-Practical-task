@@ -1,4 +1,4 @@
-// "Product added" pop up window
+// "Product added" popup box
 
 function addToCart() {
     alert('Item added to cart!');
