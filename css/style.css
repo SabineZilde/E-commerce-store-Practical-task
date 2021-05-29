@@ -1,10 +1,8 @@
-body {
-    background-color: rgb(32, 32, 32);
-    color: whitesmoke;
-}
+
 body {
     background-color: #807f84;
     font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
 }
 
 h1,h2 {
@@ -50,4 +48,5 @@ nav {
 }
 h5 {
     color:#2e4e44;
+    font-size: x-large;
 }

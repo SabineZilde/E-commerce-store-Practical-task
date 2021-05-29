@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats 1 - Picture Awesome</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+      <span class="navbar-toggler-icon">
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="#collapse_target">
+      <a href="" class="navbar-brand"></a>
+      <span class="navbar-text"> <img src="./images/logo-pa.jpeg" alt="" style="width: 50px;">
+      </span>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: rgb(105, 105, 105);">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- /Navbar -->
+  <!-- Main container -->
+  <div class="container my-5 pt-4">
+    <div class="row">
+
+      <!-- Fancybox images -->
+      <div class="col-12 col-sm-5">
+
+        <div class="row mb-3">
+          <div class="col">
+            <a data-fancybox="gallery" href="images/cats1.JPG">
+              <img style="max-width: 100%" src="images/cats1.JPG" alt="...">
+            </a>
+          </div>
+        </div>
+
+        <div>You might also like:</div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <a data-fancybox="gallery" href="images/cats2.JPG">
+              <img style="max-width: 100%" src="images/cats2.JPG" alt="...">
+            </a>
+          </div>
+          <div class="col">
+            <a data-fancybox="gallery" href="images/cats3.JPG">
+              <img style="max-width: 100%" src="images/cats3.JPG" alt="...">
+            </a>
+          </div>
+          <div class="col">
+            <a data-fancybox="gallery" href="images/cats4.JPG">
+              <img style="max-width: 100%" src="images/cats4.JPG" alt="...">
+            </a>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <a data-fancybox="gallery" href="images/cats5.JPG">
+              <img style="max-width: 100%" src="images/cats5.JPG" alt="...">
+            </a>
+          </div>
+          <div class="col">
+            <a data-fancybox="gallery" href="images/cats6.JPG">
+              <img style="max-width: 100%" src="images/cats6.JPG" alt="...">
+            </a>
+          </div>
+          <div class="col">
+            <a data-fancybox="gallery" href="images/cats7.JPG">
+              <img style="max-width: 100%" src="images/cats7.JPG" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="col-12 col-sm-7">
+        <p class="article-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsam nesciunt sunt animi nemo accusamus?
+          Nobis sequi aliquid modi, iure unde incidunt facere enim, odio fugit minus, magnam quasi commodi!
+        </p>
+        <p class="article-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, recusandae. Expedita, numquam sunt.
+          Voluptatem, dignissimos est, officia velit ea officiis totam optio expedita exercitationem omnis asperiores,
+          sapiente ducimus ipsa. Soluta!
+        </p>
+        <p class="article-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia deleniti repellat similique beatae
+          cum nemo harum sequi facere est, temporibus porro tenetur dolorum voluptatibus vel provident nihil blanditiis
+          doloribus!
+        </p>
+        <p class="article-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate accusamus incidunt minima vero ad
+          voluptates praesentium labore delectus, tempore nostrum perspiciatis aliquam repellendus obcaecati tempora
+          perferendis unde voluptas possimus fuga.
+        </p>
+      </div>
+
+      <!-- Price & add to Cart -->
+
+      <div>11.11 EUR</div>
+      <button onclick="addToCart()">Add to cart</button>
+
+    </div>
+  </div>
+  <footer class="footer fixed-bottom p-2">
+    <div class="footer-container">
+      <img src="./images/logo-pa.jpeg" alt="" style="width: 50px;">
+      <span style="color: gray;">© 2021 PICTURE awesome</span>
+    </div>
+  </footer>
+  <!-- /Main container -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
