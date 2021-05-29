@@ -1,3 +1,9 @@
+// "Product added" pop up window
+
+function addToCart() {
+    alert('Item added to cart!');
+};
+
 // Cart page functionality
 
 let productQty1 = 1;
