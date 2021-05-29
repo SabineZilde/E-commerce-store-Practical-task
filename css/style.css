@@ -38,7 +38,7 @@ nav {
 
 .total-amount {
     text-align: right;
-    font-size: large;
+    font-size: x-large;
 }
 .table {
     max-width: 800px;
@@ -57,9 +57,4 @@ h5 {
     border-radius: 5%;
     border-style: solid;
     border-width: 1px;
-}
-
-/* .cart {
-    width: 80%;
-   } */
-   
+}   
