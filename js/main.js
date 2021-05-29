@@ -1,7 +1,8 @@
-// "Product added" popup box
+// "Product added" popup text
 
 function addToCart() {
-    alert('Item added to cart!');
+    // alert('Item added to cart!');
+    document.getElementById('addedToCartInfo').innerHTML = 'Added to cart!';
 };
 
 // Cart page functionality
