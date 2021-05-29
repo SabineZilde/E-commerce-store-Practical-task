@@ -1,15 +1,22 @@
-.carousel-inner>.carousel-item {
-    height: 300px;
+body {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
 }
 body {
     background-color: #807f84;
 }
 
+<<<<<<< Updated upstream
 .cart img {
 
     height: 100px;
     width: 100px;
 } 
+=======
+.carousel-inner>.carousel-item {
+    height: 300px;
+}
+>>>>>>> Stashed changes
 
 footer {
     background-color: black;
@@ -22,5 +29,8 @@ nav {
 }
 .active {
     background-color: rgba(0, 0, 0, 0.356);
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
