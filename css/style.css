@@ -1,3 +1,8 @@
-.carousel-inner > .carousel-item {
+.carousel-inner>.carousel-item {
     height: 300px;
- }
+}
+
+.cart img {
+    height: 100px;
+    width: 100px;
+}
