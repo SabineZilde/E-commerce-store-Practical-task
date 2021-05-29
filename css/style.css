@@ -42,3 +42,12 @@ nav {
     text-align: right;
     font-size: large;
 }
+.table {
+    max-width: 800px;
+    background-color: white;
+    margin-left: 0;
+    
+}
+h5 {
+    color:#2e4e44;
+}
