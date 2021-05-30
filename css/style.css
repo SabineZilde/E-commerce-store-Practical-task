@@ -1,12 +1,14 @@
-
 body {
     background-color: #807f84;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
 }
-
 h1,h2 {
     color: rgb(211, 208, 197);
+}
+h5 {
+    color:#2e4e44 !important;
+    font-size: x-large;
 }
 .card {
 height: fit-content;
@@ -15,11 +17,9 @@ width: fit-content;
 .carousel-inner>.carousel-item {
     height: 300px;
 }
-
 .card-text {
     color: black;
 }
-
 footer {
     background-color: black;
 }
@@ -35,7 +35,6 @@ nav {
 .active {
     background-color: rgba(0, 0, 0, 0.356);
 }
-
 .total-amount {
     text-align: right;
     font-size: x-large;
@@ -44,7 +43,6 @@ nav {
     max-width: 800px;
     background-color: rgba(0, 0, 0, 0.116);
     margin-left: 0;
-    
 }
 th {
     color: #2e4e44;
@@ -52,11 +50,6 @@ th {
 tr {
     color: rgba(255, 255, 255, 0.548);
 }
-h5 {
-    color:#2e4e44 !important;
-    font-size: x-large;
-}
-
 .cart {
     background-color: rgba(0, 0, 0, 0.315);
     border-color: black;
@@ -64,16 +57,22 @@ h5 {
     border-style: solid;
     border-width: 1px;
 }   
-
 a {
     text-decoration: none;
+    color: white;
+}
+.article-image:hover {
+    opacity: 0.5;
 }
 .active {
     background-color: #7a81805b !important;
   }
-  .main-card, .card-category {
-      background-color: rgba(0, 0, 0, 0.116);
-  }
+.main-card, .card-category {
+    background-color: rgba(0, 0, 0, 0.116);
+}
 #addedToCartInfo {
     background-color: olivedrab;
+}
+.navbar-toggler {
+    border-color: dimgray !important;
 }
