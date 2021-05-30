@@ -24,7 +24,7 @@ let subtotal2 = totalProduct2;
 let subtotal3 = totalProduct3;
 
 let subtotal = 0;
-
+let shipping = 10;
 
 $('#add1').on('click', () => {
     $('#product1').html(productQty1 += 1);
@@ -69,8 +69,36 @@ $('#subtract3').on('click', () => {
     }
 });
 
-
 setInterval( () => {
-    $('#subtotal').html(subtotal = subtotal1 + subtotal2 + subtotal3);
+    if (clicked1 > 0) {
+        $('#subtotal').html(subtotal = subtotal2 + subtotal3);
+        }
+    else {   $('#subtotal').html(subtotal = subtotal1 + subtotal2 + subtotal3);
+
+    } 
+ 
+    $('#finaltotal').html(subtotal + shipping);
 }, 10);
+
+$('#delete1').on('click', () => {
+    $('#product1').html(productQty1 = 0);
+    $('#total1').html(newTotalProd1 = 0);
+   
+})
+$('#deleteProduct1').on('click', function deleting1(){
+    $('.productRow1').remove();
+    clicked1 ++;
+});
+let clicked1 = 0;
+
+$('#deleteProduct2').on('click', function(){
+    $('.productRow2').remove();
+});
+$('#deleteProduct3').on('click', function(){
+    $('.productRow3').remove();
+});
+
+
+
+
 

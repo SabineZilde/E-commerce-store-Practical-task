@@ -70,7 +70,7 @@
                     <div class="col">Total</div>
                     <div class="col"></div>
                 </div>
-                <div class="row my-2 d-flex align-items-center">
+                <div class="row my-2 d-flex align-items-center productRow1">
                     <div class="col">
                         <div class="cart">
                             <img src="./images/cats6.JPG" class="col-12 rounded-1" alt="Cats 6">
@@ -83,10 +83,11 @@
                     <div class="col">5.00 $</div>
                     <div class="col"><strong id="total1">5.00 </strong> $</div>
                     <div class="col">
-                        <button class="btn btn-sm">&#10060;</button>
+                        <button class="btn btn-sm" id="deleteProduct1">&#10060;</button>
                     </div>
-                </div>
                 <hr>
+            </div>
+                
                 <div class="row mt-1 d-flex align-items-center">
                     <div class="col">
                         <div class="cart">
@@ -100,7 +101,7 @@
                     <div class="col" >3.50 $</div>
                     <div class="col"><strong id="total2">3.50</strong> $</div>
                     <div class="col">
-                        <button class="btn btn-sm">&#10060;</button>
+                        <button class="btn btn-sm" id="delete2">&#10060;</button>
                     </div>
                 </div>
                 <hr>
@@ -117,7 +118,7 @@
                     <div class="col">6.00 $</div>
                     <div class="col"><strong id="total3">6.00</strong> $</div>
                     <div class="col">
-                        <button class="btn btn-sm">&#10060;</button>
+                        <button class="btn btn-sm" id="delete3">&#10060;</button>
                     </div>
                 </div>
                 <hr>
@@ -143,11 +144,11 @@
                         <p>Shipping</p>
                     </div>
                     <div class="col">
-                        <p>10.00 EUR</p>
+                        <p id="shipping">10.00 EUR</p>
                     </div>
                 </div>
                 <hr>
-                <strong class="total-amount">Total: <span>666.00</span> EUR</strong>
+                <strong class="total-amount">Total: <span id="finaltotal">24.5</span> $</strong>
                 <div class="row mt-3">
                     <div class="col text-center d-grid gap-2">
                         <button type="button" class="btn btn-success">Buy</button>
