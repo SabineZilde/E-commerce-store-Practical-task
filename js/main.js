@@ -14,6 +14,8 @@ $('#add').on('click', () => {
     $('#product1').html(productQty1 += 1);
 });
 
-$('#subtract').on('click', () => {
-    $('#product1').html(productQty1 -= 1);
+$('#subtract').on('click', () => {   
+    if (productQty1 !== 1) {
+        $('#product1').html(productQty1 -= 1);
+    }
 });
