@@ -2,7 +2,7 @@
 
 function addToCart() {
     // alert('Item added to cart!');
-    document.getElementById('addedToCartInfo').innerHTML = 'Added to cart!';
+    document.getElementById('addedToCartInfo').innerHTML = '&#10004 Added to cart!';
 };
 
 // Cart page functionality

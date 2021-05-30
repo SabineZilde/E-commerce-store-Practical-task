@@ -74,4 +74,6 @@ a {
   .main-card, .card-category {
       background-color: rgba(0, 0, 0, 0.116);
   }
-  
+#addedToCartInfo {
+    background-color: olivedrab;
+}
