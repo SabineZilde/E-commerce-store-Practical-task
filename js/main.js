@@ -1,7 +1,6 @@
 // "Product added" popup text
 
 function addToCart() {
-    // alert('Item added to cart!');
     document.getElementById('addedToCartInfo').innerHTML = '&#10004 Added to cart!';
 };
 
