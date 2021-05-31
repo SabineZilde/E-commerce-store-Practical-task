@@ -72,9 +72,12 @@ $('#subtract3').on('click', () => {
 
 setInterval(() => {
     $('#subtotal').html(subtotal = subtotal1 + subtotal2 + subtotal3);
+    $('#finaltotal').html(subtotal + shipping);
+
     if (clicked1 > 0 && clicked2 > 0 && clicked3 > 0) {
         $('#subtotal').html(subtotal = 0);
         $('#emptycart').removeAttr('hidden');
+        $('#finaltotal').html(subtotal);
     } else if (clicked1 > 0 && clicked2 > 0) {
         $('#subtotal').html(subtotal = subtotal3);
     } else if (clicked2 > 0 && clicked3 > 0) {
@@ -89,7 +92,6 @@ setInterval(() => {
         $('#subtotal').html(subtotal = subtotal1 + subtotal2);
     }
 
-    $('#finaltotal').html(subtotal + shipping);
 }, 1);
 
 let clicked1 = 0;
