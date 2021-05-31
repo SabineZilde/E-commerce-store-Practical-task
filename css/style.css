@@ -76,3 +76,6 @@ a {
 .navbar-toggler {
     border-color: dimgray !important;
 }
+.cart-logo {
+    padding-top: 5px;
+}

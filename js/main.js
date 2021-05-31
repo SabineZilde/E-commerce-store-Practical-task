@@ -76,9 +76,10 @@ setInterval( () => {
     else {   $('#subtotal').html(subtotal = subtotal1 + subtotal2 + subtotal3);
 
     } 
- 
+  
     $('#finaltotal').html(subtotal + shipping);
 }, 10);
+
 
 $('#delete1').on('click', () => {
     $('#product1').html(productQty1 = 0);
@@ -91,11 +92,24 @@ $('#deleteProduct1').on('click', function deleting1(){
 });
 let clicked1 = 0;
 
-$('#deleteProduct2').on('click', function(){
+$('#delete2').on('click', () => {
+    $('#product2').html(productQty2 = 0);
+    $('#total2').html(newTotalProd2 = 0);
+   
+})
+$('#deleteProduct2').on('click', function deleting2(){
     $('.productRow2').remove();
+    clicked1 ++;
 });
-$('#deleteProduct3').on('click', function(){
+
+$('#delete3').on('click', () => {
+    $('#product3').html(productQty3 = 0);
+    $('#total3').html(newTotalProd3 = 0);
+   
+})
+$('#deleteProduct3').on('click', function deleting3(){
     $('.productRow3').remove();
+    clicked1 ++;
 });
 
 
