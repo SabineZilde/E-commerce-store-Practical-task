@@ -69,10 +69,12 @@ $('#subtract3').on('click', () => {
     }
 });
 
+
 setInterval(() => {
     $('#subtotal').html(subtotal = subtotal1 + subtotal2 + subtotal3);
     if (clicked1 > 0 && clicked2 > 0 && clicked3 > 0) {
         $('#subtotal').html(subtotal = 0);
+        $('#emptycart').removeAttr('hidden');
     } else if (clicked1 > 0 && clicked2 > 0) {
         $('#subtotal').html(subtotal = subtotal3);
     } else if (clicked2 > 0 && clicked3 > 0) {
@@ -88,7 +90,7 @@ setInterval(() => {
     }
 
     $('#finaltotal').html(subtotal + shipping);
-}, 10);
+}, 1);
 
 let clicked1 = 0;
 let clicked2 = 0;
