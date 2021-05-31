@@ -33,7 +33,7 @@ $('#add1').on('click', () => {
 
 });
 
-$('#subtract1').on('click', () => {   
+$('#subtract1').on('click', () => {
     if (productQty1 !== 1) {
         $('#product1').html(productQty1 -= 1);
         $('#total1').html(newTotalProd1 -= totalProduct1);
@@ -47,7 +47,7 @@ $('#add2').on('click', () => {
     subtotal2 = newTotalProd2;
 });
 
-$('#subtract2').on('click', () => {   
+$('#subtract2').on('click', () => {
     if (productQty2 !== 1) {
         $('#product2').html(productQty2 -= 1);
         $('#total2').html(newTotalProd2 -= totalProduct2);
@@ -61,7 +61,7 @@ $('#add3').on('click', () => {
     subtotal3 = newTotalProd3;
 });
 
-$('#subtract3').on('click', () => {   
+$('#subtract3').on('click', () => {
     if (productQty3 !== 1) {
         $('#product3').html(productQty3 -= 1);
         $('#total3').html(newTotalProd3 -= totalProduct3);
@@ -69,47 +69,60 @@ $('#subtract3').on('click', () => {
     }
 });
 
-setInterval( () => {
-    if (clicked1 > 0) {
+setInterval(() => {
+    $('#subtotal').html(subtotal = subtotal1 + subtotal2 + subtotal3);
+    if (clicked1 > 0 && clicked2 > 0 && clicked3 > 0) {
+        $('#subtotal').html(subtotal = 0);
+    } else if (clicked1 > 0 && clicked2 > 0) {
+        $('#subtotal').html(subtotal = subtotal3);
+    } else if (clicked2 > 0 && clicked3 > 0) {
+        $('#subtotal').html(subtotal = subtotal1);
+    } else if (clicked1 > 0 && clicked3 > 0) {
+        $('#subtotal').html(subtotal = subtotal2);
+    } else if (clicked1 > 0) {
         $('#subtotal').html(subtotal = subtotal2 + subtotal3);
-        }
-    else {   $('#subtotal').html(subtotal = subtotal1 + subtotal2 + subtotal3);
+    } else if (clicked2 > 0) {
+        $('#subtotal').html(subtotal = subtotal1 + subtotal3);
+    } else if (clicked3 > 0) {
+        $('#subtotal').html(subtotal = subtotal1 + subtotal2);
+    }
 
-    } 
-  
     $('#finaltotal').html(subtotal + shipping);
 }, 10);
 
+let clicked1 = 0;
+let clicked2 = 0;
+let clicked3 = 0;
 
 $('#delete1').on('click', () => {
     $('#product1').html(productQty1 = 0);
     $('#total1').html(newTotalProd1 = 0);
-   
+
 })
-$('#deleteProduct1').on('click', function deleting1(){
+$('#deleteProduct1').on('click', function deleting1() {
     $('.productRow1').remove();
-    clicked1 ++;
+    clicked1++;
 });
-let clicked1 = 0;
+
 
 $('#delete2').on('click', () => {
     $('#product2').html(productQty2 = 0);
     $('#total2').html(newTotalProd2 = 0);
-   
+
 })
-$('#deleteProduct2').on('click', function deleting2(){
+$('#deleteProduct2').on('click', function deleting2() {
     $('.productRow2').remove();
-    clicked1 ++;
+    clicked2++;
 });
 
 $('#delete3').on('click', () => {
     $('#product3').html(productQty3 = 0);
     $('#total3').html(newTotalProd3 = 0);
-   
+
 })
-$('#deleteProduct3').on('click', function deleting3(){
+$('#deleteProduct3').on('click', function deleting3() {
     $('.productRow3').remove();
-    clicked1 ++;
+    clicked3++;
 });
 
 
