@@ -80,16 +80,27 @@ setInterval(() => {
         $('#finaltotal').html(subtotal);
     } else if (clicked1 > 0 && clicked2 > 0) {
         $('#subtotal').html(subtotal = subtotal3);
+    $('#finaltotal').html(subtotal + shipping);
     } else if (clicked2 > 0 && clicked3 > 0) {
         $('#subtotal').html(subtotal = subtotal1);
+    $('#finaltotal').html(subtotal + shipping);
+
     } else if (clicked1 > 0 && clicked3 > 0) {
         $('#subtotal').html(subtotal = subtotal2);
+    $('#finaltotal').html(subtotal + shipping);
+
     } else if (clicked1 > 0) {
         $('#subtotal').html(subtotal = subtotal2 + subtotal3);
+    $('#finaltotal').html(subtotal + shipping);
+
     } else if (clicked2 > 0) {
         $('#subtotal').html(subtotal = subtotal1 + subtotal3);
+    $('#finaltotal').html(subtotal + shipping);
+
     } else if (clicked3 > 0) {
         $('#subtotal').html(subtotal = subtotal1 + subtotal2);
+    $('#finaltotal').html(subtotal + shipping);
+
     }
 
 }, 1);
